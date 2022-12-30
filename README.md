@@ -14,3 +14,14 @@
  Нужен django-app, который позволяет вносить в БД меню (одно или несколько) через админку, и нарисовать на любой нужной странице меню по названию.
  {% draw_menu 'main_menu' %}
  При выполнении задания из библиотек следует использовать только Django и стандартную библиотеку Python.
+ 
+ Для скачивания репозитория и запуска приложения на локальном сервере:
+- git clone https://github.com/SapozhkovEvgenii/tree-menu-django-test.git
+- cd tree-menu-django-test
+- python3 -m venv .venv
+- source .venv/bin/activate
+- pip install -r requirements.txt
+- cd tree-menu-django
+- python manage.py createsuperuser (для доступа в админ-панель(http://127.0.0.1:8000/admin/) и возможности добавления меню или подменю)
+- python manage.py runserver
+- перейдите по ссылке http://127.0.0.1:8000/tree_menu/
